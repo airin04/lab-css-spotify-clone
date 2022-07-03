@@ -1,8 +1,139 @@
-/*
-Colors:
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: sans-serif;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+header {
+    position:relative;
+    text-align: center;
+    color: white;
+    height: 100vh; 
+    width: 100vw;
+}
 
-*/
+header > img {
+    height: 100vh; 
+    width: 100vw;
+}
+
+h1 {
+    font-size: 85px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+header > p {
+    font-size: 30px;
+    font-weight: lighter;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    white-space: nowrap;
+}
+
+.nav-bar {
+    z-index: 1;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    top:0%;
+    left:0%;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.nav-bar * {
+    height:60px;
+}
+
+.nav-bar > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    font-size: larger;
+    font-weight: lighter;
+    gap: 20px;
+}
+
+
+.spotify-specs {
+    padding-top: 30px;
+    height: 250px;
+    width: 100vw;
+    display:flex;
+    flex-flow: row nowrap;
+    flex-basis:auto;
+    justify-content: space-around;
+}
+
+.spotify-specs-icons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: inherit;
+    text-align: center;
+
+}
+
+.spotify-specs-icons > img {
+    height: 70px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #1DB954;
+    text-align: center;
+}
+
+.spotify-specs-icons > h3 {
+    color: #1DB954;
+}
+
+.spotify-specs-icons > p {
+    font-weight: lighter;
+    white-space: wrap;
+}
+
+.green-section {
+    background-color: #1DB954;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.green-section > h2 {
+    text-align: left;
+    color: #fff;
+    text-decoration-color: #fff;
+}
+
+.green-section > h3, p {
+    color: #fff;
+}
+
+.homescreen-img {
+    height: 500px;
+}
+
+.white-logo {
+    height:100px;
+    position: absolute;
+    left: 50%;
+}
